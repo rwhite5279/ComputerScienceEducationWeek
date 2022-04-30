@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Computer Science Education Week</title>
+    <meta name="resource-type" content="document" />
+    <meta name="author" content="richard white" />
+    <meta name="description" content="polytechnic computer programming" />
+    <meta name="keywords" content="richard white, polytechnic school, computer programming, computer science" />
+    <meta name="distribution" content="global" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../showHide.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Computer Science Education Week</a></h1>
+    </header>
+    
+    <main>
+        <h1>How to Get Hacked</h1>
+        <h2>aka <i>Bad Things Can happen on the Internetz</i></h2>
+        <p>Let's talk a little bit about passwords, hashes, bad guys, and staying safe!</p>
+        
+        <div class="announcement"><h1>Agenda</h1>
+          <ol>
+            <li><a href="#1">What's a hash?</a></li>
+            <li><a href="#2">How do passwords work?</a></li>
+            <li><a href="#3">Let's steal some passwords!</a></li>
+            <li><a href="#4">How to protect yourself</a></li>
+          </ol>
+        </div>
+        
+        <div id="1"></div>
+        <h2>1. What's a hash?</h2>
+        <p>A hash is a one-way function that converts one value to another. Let's see how that works.</p>
+        <p>Launch a Terminal on your computer and enter this command:</p>
+        <div class="code">% echo -n "123456" | openssl sha256
+(stdin)= 8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92</div>
+        <p>In this example, the input is the password 123456 and the output is the long series of 64 characters.</p>
+        <p>If you change  one of the characters in the password by even a single character, the hash output will be completely different.</p>
+        <div class="code">% echo -n "123457" | openssl sha256
+(stdin)= 54b688a517f7654563a6c64d945a3670880a4c602ec67a065bbebbcd2b22edd5</div>
+        <p>This isn't <i>encryption</i> because we can't convert the hash value back to the original password.</p>
+        <p>So what's the point of having a hash?</p>
+        
+        <div id="2"></div>
+        <h2>2. How do passwords work?</h2>
+        <p>When you provide a password to a service, whether it's an bad (simple) password or a good (complex) password, the password is typically hashed before storing in a database. That way the password can't be discovered.</p>
+        <p>Here's a student's password stored on a database used for next week's Capture the Flag competition. You can't really tell from this if TheoD's password is "123456" or "I am number one in Advent of Code!" The hash makes it impossible to "reverse engineer."</p>
+        <img src="password_hash.png" />
+        <p>Here's the hash of somebody's password on our server:</p>
+        <div class="code">9NldrTV0W$MxyTQjlXO8ICl1jzRohWV/f6v/GY13SMAZdWpYqH1rEVVXD0xyvAjPPP/Ktd9Au0kFHj9zqgyRFbAWb1dAXqo0</div>
+        <p>You're not really going to be able to figure out what that is, ordinarily.</p>
+        <p>Sometimes, however, system administrators / programmers get lazy or make mistakes.</p>
+        <img src="facebook-plaintext.png" class="half_center" />
+        <p>&nbsp;</p>
+        <img src="godaddy-plaintext.png" class="half_center" />
+        
+        <p>There are other issues that can arise as well.</p>
+        
+        
+        <div id="3"></div>
+        <h2>3. Let's steal some passwords!</h2>
+        <p><a href="https://crackstation.net">https://crackstation.net</a></p>
+        <img src="sha256-lookup.png" />
+        
+        <div id="4"></div>
+        <h2>4. How to protect yourself</h2>
+        <p>This is not the sexiest part of this presentation, but it might be the most important.</p>
+        <p><b>You need to use a Password Manager.</b></p>
+        <p>Your email address, once it's been used on the internet for any length of time, <i>will</i> show up in a hacked server, along with your password or your password hash. <b>If you use weak passwords, or re-use passwords on multiple websites, bad guys will have access to your online information: Email. Bank accounts. Credit card accounts.</b></p>
+        <p>You can't afford to ignore this any longer.</p>
+        
+        <div class="problem">
+            <h1>HaveIBeenPwned?</h1>
+            <p>Let's go to <a href="https://haveibeenpwned.com">haveibeenpwned.com</a> to find out if your email has been discovered in a hack.</p>
+        </div>
+        <p>So... you need a password manager.</p>
+        <div class="definition">
+            <h1>How a password manager works</h1>
+            <p>A password manager keeps track of your userIDs and passwords for all your websites online. You don't need to remember all the userIDs and passwords, because the manager keeps that information secure, protected by a single, strong password that you control.</p>
+            <p>This system of managing your online security does require that you trust the security practices of the service that you use. Most security professionals now consider the potential risk of using a well-established company to be much less than the risk of using a weak or insecure password on multiple websites.</p>
+        </div>
+        
+        <h3>4.1. Some good password managers</h3>
+        <ol>
+            <li><a href="https://www.lastpass.com">LastPass<a></li>
+            <li><a href="https://bitwarden.com">Bitwarden</a></li>
+            <li><a href="https://1password.com">1Password</a></li>
+        </ol>
+        <h3>4.2. Live demo of using a password manager</h3>
+        
+        
+        
+            
+        
+        
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,404 @@
+// styles.css
+
+html
+	{
+		margin: 0; 
+		padding: 0;
+	}
+
+body 
+	{ 
+		margin: 0; 
+		border: 0;
+		padding: 0;
+		font-family: Verdana, Times, Helvetica, sans-serif; 
+		font-size: 100.01%; 
+		font-weight: normal; 
+		color: #000; 
+		background: #fff; 
+	}
+
+a:link, a:visited 
+	{ 
+		text-decoration: underline; 
+		color: #0093ff;  
+	}
+
+a:hover, a:active 
+	{ 
+		text-decoration: underline; 
+		color: #0093FF; 
+	}
+
+table 
+	{
+		border-collapse: collapse; 
+	}
+
+td 
+	{
+		margin: 0; 
+		padding: 0.4em; 
+		border: solid 1px black; 
+		border-collapse: collapse; 
+		vertical-align: top; 
+	}
+
+ul 
+	{
+		list-style-type: square; 
+	}
+
+li 
+	{
+		padding-bottom: 0.2em; 
+	}
+
+img, .half_center, .half_right, .small_right
+	{ 
+		width: 100%; 
+	}
+
+figure
+   {
+	   margin: 0;
+	   border: 0;
+	   padding: 0;
+   }
+   
+figcaption
+   {
+	   margin-top: 0.5em; text-align: center;
+	   font-style: italic;
+   }
+			
+		
+header 
+	{ 
+		margin: 0; 
+		border: 0; 
+		padding: 0 1em; 
+		background: #000; 
+		color: #fff; 
+		text-align: center; 
+		overflow: auto;  
+		width: 100%;
+		position: relative;
+	}
+
+header h1  
+	{
+		margin: 0;
+		padding: 0.5em 0;
+		font-size: 120%;
+	}
+
+header a:link, header a:visited {
+			text-decoration: none; 
+			color: #0093FF; 
+			}
+header a:hover, header a:active {
+			color: #ccc; 
+			}
+
+div#mobile 
+	{ 
+		font-size: 140%;
+		position: absolute;
+		bottom: 0.2em;
+		right: 1em; 
+	}
+div#mobile a:link, div#mobile a:visited 
+	{ 
+		color: #fff; 
+	}
+
+div#mobile a:hover, div#mobile a:active 
+	{ 
+		color: #ccc; 
+	}
+
+/* Default menu is for a mobile device, vertically oriented and  */
+/* taking up the full width of the viewport. Initially not */
+/* displayed, however! */
+nav 
+	{ 
+		margin: 0; 
+		border: 0; 
+		padding: 1em; 
+		width: 100%; 
+		clear:both; 
+		display: none; 
+		overflow: auto;
+		font-family: Verdana, Helvetica, Arial, sans-serif;  
+		font-weight: bold;
+
+	}
+nav ul 
+	{ 
+		margin: 0; 
+		border: 0; 
+		padding: 0; 
+		width: 100%; 
+	}
+nav li 
+	{ 
+		margin: 0; border-style: solid; border-width: 1px 0 0 0; 
+		border-color: #fff; 
+		padding: 0; 
+		width: 100%; 
+		height: 100%; 
+		font-size: 100%;
+		display: block; 
+		text-align: center; 
+		list-style-type: none;   
+	}
+nav a:link, nav a:visited 
+	{ 
+		margin: 0; 
+		border: 0; 
+		padding: 0.5em 0; 
+		display: block; 
+		height: 100%;
+		text-decoration: none; 
+		color: #ccc;
+		background: #004080;
+	}
+	
+nav a:hover, nav a:active 
+	{ 
+		color: #fff;
+		background: #99ccff;  
+	}
+
+nav li#here 
+	{
+		padding: 0.5em 0; 
+		background: #004080;
+		color: #fff;
+	}
+	
+main 
+	{ 
+		margin: 0;
+		padding: 0 1em;
+		overflow: auto; 
+		line-height: 1.5em;
+	}
+	
+main h1
+	{
+		line-height: 1.1em;
+		font-size: 130%;
+	}
+	
+main h2
+	{
+		line-height: 1.1em;
+		font-size: 110%;
+	}
+
+
+
+/* Default content1 and content2 are for a mobile device, taking up the full 
+   width of the screen */
+#content1, #content2 
+	{ 
+		margin: 0; 
+		border: 0; 
+		padding: 0; 
+		float: left; 
+		width: 100%; 
+	}
+
+
+.announcement 
+	{ 
+		margin: 0 0 1em 0;  
+		border: dashed 1px #666; 
+		padding: 0.5em; 
+		background-color: #eee; 
+		overflow: auto; 
+	}
+
+.toggle
+{
+	display: none;
+}
+
+/* code blocks and inline code  */
+ .code 
+ {
+	 margin: 0.5em;
+	 border: solid 1px #ccc;
+	 border-radius: 3px;
+	 padding: 0.5em;
+	 font-size: 1.2em;
+	 background: #eee;
+	 color: #000;
+	 font-family: Courier, monospace;
+	 font-weight: normal;
+	 white-space: pre;
+	 overflow-x: auto;
+ }
+
+.ilc 
+{
+	margin: 0;
+	font-family: Courier, monospace;
+	font-size: 1.2em;
+	/* border: solid 1px #ccc;
+	border-radius: 3px;
+	padding: 0.05em 0.2em; 
+	background: #eee; */
+	font-size: 1.2em;
+	font-weight: bold; 
+} 
+
+code {
+	margin: 0;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	padding: 0.05em 0.2em;
+	font-size: 1.2em;
+	background: #eee;
+	color: #000;
+	font-family: Courier, monospace;
+	font-weight: normal;
+	white-space: pre;
+	overflow-x: auto;
+}
+.codehighlight 
+{
+	font-weight: bold;
+}
+
+/* red highlight */
+.highlight 
+{
+	margin: 0.5em 0;
+	padding: 10px 10px 0 10px;
+	background-color: #ffe6ef;
+	color: #000;
+	border: solid 1px #000;
+	border-radius: 3px;
+	overflow: auto;
+}
+.highlight h1 
+{
+	margin: -10px -10px 0 -10px;
+	padding: 5px;
+	background-color: #900;
+	color: #fff;
+	font-size: 1.4em;
+}
+/*  blue problem  */
+.problem 
+{
+	margin: 0.5em 0;
+	padding: 10px 10px 0 10px;
+	background-color: #d5e0ff;
+	color: #000;
+	border: solid 1px #000;
+	border-radius: 3px;
+	overflow: auto;
+}
+.problem h1 
+{ 
+	background-color: #369;
+	color: #fff;
+	margin: -10px -10px 0 -10px;
+	padding: 5px;
+	font-size: 1.4em;
+}
+/* green definition  */
+.definition 
+{
+	margin: 0.5em 0;
+	padding: 10px 10px 0 10px;
+	background-color: #e2ffd7;
+	color: #000;
+	border: solid 1px #000;
+	border-radius: 3px;
+	overflow: auto;
+}
+.definition h1 
+{ 
+	background-color: #360;
+	color: #fff;
+	margin: -10px -10px 0 -10px;
+	padding: 5px;
+	font-size: 1.4em;
+}
+
+footer 
+	{ 
+		margin: 0; 
+		border: 0; 
+		padding: 0 1em; 
+		background: #333; 
+		color: #fff; 
+		text-align: center; 
+		overflow: auto; 
+	}
+footer a:link, footer a:visited 
+	{ 
+		color: #fff; 
+	}
+
+/* Padding will be added to sides as necessary */
+.container 
+	{
+		/* margin: auto; max-width: 800px; */
+		margin: 0 1em;
+	} 
+
+
+/* desktop display, for large-width desktop-sized display, */
+/* all the way down to 600px wide*/
+@media (min-width: 600px) 
+{ 
+	body { font-size: 90%; }
+	header h1 {font-size: 140%; text-align: left; width: 50%; margin: 0.1em 0;}
+	
+	header { }
+	
+	/* set up horizontal menu */
+	#mobile {display: none; } 
+	nav {display: block; width: 50%; float: right; position: absolute; top: 0.6em; right: 0; }
+	nav li {border-width: 0; width: 33%; float: left; }
+	nav a:link, nav a:hover { background: #004080 };
+	
+	/* Places larger margin at top to move content below pinned header */
+	main {  }
+	 
+	/* places two content containers side by side */
+	#content1 { padding: 0 4% 0 0; width: 46%; float: left; } 
+	#content2 { padding: 0 4% 0 0; width: 46%; float: left; } 
+	
+	/* images on the desktop */
+	.half_center { 
+	  width: 50%; 
+	  display: block;
+	  margin: 1em auto; 
+	  border: 0; 
+	  padding: 0; 
+	}
+	
+	.half_right { 
+	  margin: 0 1em 1em 1em; 
+	  border: 0; 
+	  padding: 0; 
+	  width: 50%; 
+	  float: right;
+	}
+	
+	.small_right { 
+	  margin: 0 1em 1em 1em; 
+	  border: 0; 
+	  padding: 0; 
+	  width: 30%; 
+	  float: right;  
+   }
+	
+}

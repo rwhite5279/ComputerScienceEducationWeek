@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Computer Science Education Week</title>
+    <meta name="resource-type" content="document" />
+    <meta name="author" content="richard white" />
+    <meta name="description" content="polytechnic computer programming" />
+    <meta name="keywords" content="richard white, polytechnic school, computer programming, computer science" />
+    <meta name="distribution" content="global" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../showHide.js" type="text/javascript"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Computer Science Education Week</a></h1>
+    </header>
+    
+    <main>
+        <h1>Circuit Playground Express</h1>
+        <p>Computers come in all shapes and sizes. The <i>Circuit Playground Express</i> (CPX) is a "microprocessor," a computer that, compared with a full computer, is somewhat reduced in its features, speed, or performance.</p>
+        <p>We're going to be using a laptop computer to program the CPX, which can then run the program on its own.</p>
+        <p>You'll have a number of different options to experiment with in programming your CPX.</p>
+        <p>Let's get started!</p>
+        
+        <h2>Flash Drives and Text Editors</h2>
+        <p>Take a CPX and plug in the USB cable between the device and a USB-A port on the MacBook Pro computer running LinuxMint. When you plug the device in, it will probably start flashing some of its LED lights&mdash;it's using the power from your computer to run the last program that was installed on it.</p>
+        <p>Your computer screen will look something like this:</p>
+        <img src="linuxmint-screenshot.png" />
+        <p>The CPX appears as flash drive on the Desktop as a disk called "CIRCUITPY," and the files located on that device are listed in the window that opened.</p>
+        <p>The CPX can only hold a single program at a time, and the file for that program is called <span class="ilc">code.py</span>.</p>
+        <p>Double-click on the <span class="ilc">code.py</span> program and LinuxMint will launch the <b>xed</b> text editor, which is what we'll use to write our program.</p>
+        <img src="linuxmint-screenshot2.png" />
+        <p>Any changes made to this file, when saved to the CPX, will automatically start running on that device.</p>
+        
+        <h2>The CircuitPython language</h2>
+        <p>The CPX runs a variant of Python called <i>CircuitPython</i>, which is a small programming language that makes use of the Python syntax. If you've programmed in Python before you'll recognize the format of CircuitPython statements.</p>
+        <ul>
+            <li><span class="ilc">def function():</span></li>
+            <li><span class="ilc">x = 7</span></li>
+            <li><span class="ilc">if</span>, <span class="ilc">if-else</span>, <span class="ilc">if-elif-else</span></li>
+            <li><span class="ilc">for i in range(x):</span></li>
+            <li><span class="ilc">while x > 10:</span></li>
+        </ul>
+        <p>You'll be entering and manipulating code today to see how it works on the CPX!</p>
+        <h2>The CPX Input/Output interface</h2>
+        <p>If you've got a CPX in front of you, you may have already noticed, there's no keyboard and no screen! The CPX gets its input from various sensors and input ports that are on the device itself, including a slider switch and two buttons. We'll see how those work today.</p>
+        <p>Output for today will consist of a red LED light and ten "neopixels"&mdash;powerful, programmable LED lights that encircle the CPX.</p>
+        <p>For the CPX to be able to run programs, it also needs some libraries that are imported so we can interact with the CPX's buttons, sensors, lights, etc.</p>
+        
+        <h2>Projects</h2>
+        <p>Pick projects, put the code into your text editor, and upload it to the Circuit Playground to see what happens when it runs. Then change the code, upload it again, and see how the program works differently!</p>
+        
+        <ul>
+            <li><b>Demo - ColorCycle</b> [<a href="./examples/colorcycle.zip">Download</a>]<br />
+            This program demonstrates the NeoPixels and shows how they can produce some interesting effects.</li>
+            <li><b>Project - Halloween</b> [<a href="./examples/halloween.zip">Download</a>]<br />
+            This program produces random lightning flashes, and plays the sound of a scary witch laughing if the device is bumped or disturbed. Spooky!</li>
+            <li><b>Project - Tug of War</b> [<a href="./examples/tugofwar.zip">Download</a>]<br />
+            This program allows two users, Button A/Red and Button B/Blue, to play a digital tug-of-war. Wait until the red LED lights up, then be the first to push your button. If you go too early, you'll get penalized!</li>
+        </ul>
+        
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>
